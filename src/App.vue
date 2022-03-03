@@ -1,17 +1,53 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <!-- <VueFixedHeader> -->
+      <Nav />
+    <!-- </VueFixedHeader> -->
+    <transition name="pageFade" mode="out-in">
+      <router-view/>
+    </transition>
+    <Footer />
   </div>
-  <router-view/>
 </template>
 
-<style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+<script>
+// import VueFixedHeader from 'vue-fixed-header'
+import Nav from '@/components/Nav.vue'
+import Footer from '@/components/Footer.vue'
+
+export default {
+  components: {
+    Nav,
+    Footer
+    // VueFixedHeader
+  }
+}
+</script>
+
+<style>
+  @import './assets/styles/main.css';
+
+  .pageFade-enter {
+      opacity: 0;
+  }
+
+  .pageFade-enter-active {
+      transition: opacity .3s ease;
+  }
+
+  .pageFade-leave {
+    opacity: 1;
+  }
+
+  .pageFade-leave-active {
+      transition: opacity .3s ease;
+      opacity: 0;
+  }
+
+  .navbar.vue-fixed-header--isFixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+  }
 </style>
