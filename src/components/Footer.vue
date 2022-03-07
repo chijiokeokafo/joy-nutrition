@@ -1,11 +1,42 @@
 <template>
   <div class="main-footer-container">
-    <div class="inner-footer">
-      <img src="@/assets/img/logo.png" alt="" class="footer-logo">
-      <p>&copy;Joy Guthrie, RD<br>
-      <a href="mailto:joyguthrierd@gmail.com">joyguthrierd@gmail.com</a><br>
-      416-476-5491
-      </p>
+    <div class="inner-footer row justify-between align-start">
+      <div class="links text-left">
+        <router-link to="/">
+          <p><strong>Home</strong></p>
+        </router-link>
+        <router-link to="/about">
+          <p><strong>About</strong></p>
+        </router-link>
+        <router-link to="/resources">
+          <p><strong>Resources</strong></p>
+        </router-link>
+        <router-link to="/services">
+          <p><strong>Service</strong></p>
+        </router-link>
+        <router-link to="/contact">
+          <p><strong>Contact</strong></p>
+        </router-link>
+        <router-link to="/book">
+          <p><strong>Book</strong></p>
+        </router-link>
+      </div>
+
+      <div class="social col justify-between">
+        <p><strong>Connect</strong></p>
+        <img src="@/assets/img/facebook.svg" alt="">
+        <img src="@/assets/img/instagram.svg" alt="">
+        <img src="@/assets/img/twitter.svg" alt="">
+
+      </div>
+      <div class="contact text-left">
+        <p><strong>Joy Nutrition</strong></p>
+        <p>123 Main St<br>
+        City, Ontario, Canada<br>
+        E1N 3A5</p>
+        <p>123 456 7895<br>
+        joy@joynutrition.com</p>
+      </div>
     </div>
   </div>
 </template>
@@ -13,29 +44,28 @@
 <style lang="stylus" scoped>
   .main-footer-container
     width 100%
-    background-color #d0d197
-    padding 30px
+    background-color #F3F0E8
+    padding 60px
 
   .inner-footer
-    padding 0 20px
-    width 100%
+    width 80%
     text-align center
+    margin 0 auto
 
-  .footer-logo
-    width 60px
-    margin 0 auto 20px
-    display block
+  .links a
+    text-decoration none
+    transition all 0.125s ease
+
+    &:hover p
+      color #9CBCA5
 
   p
-    font-size 12px
-    letter-spacing 4px
-    line-height 2
+    margin-bottom 10px
+    transition all 0.125s ease
 
-    a
-      color inherit
-      text-decoration none
-      transition all 0.125s ease;
+  .social
 
-      &:hover
-        color #fff
+    img
+      display block
+      margin-bottom 20px
 </style>

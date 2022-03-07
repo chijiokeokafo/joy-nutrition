@@ -1,5 +1,5 @@
 <template>
-  <div class="main-nav-container navbar">
+  <div class="main-nav-container navbar" :class="{ 'is-hidden': !showHeader }">
     <router-link to="/">
       <div class="logo">
         <img src="@/assets/img/logo-long.png" alt="">
@@ -37,22 +37,51 @@
 
 <script>
 export default {
-  name: 'Nav'
+  name: 'Nav',
+  data: () => ({
+    showHeader: true,
+    lastScrollPosition: 0,
+    scrollOffset: 40
+  }),
+  mounted () {
+    this.lastScrollPosition = window.pageYOffset
+    window.addEventListener('scroll', this.onScroll)
+  },
+  beforeUnmount () {
+    window.removeEventListener('scroll', this.onScroll)
+  },
+  methods: {
+    // Toggle if navigation is shown or hidden
+    onScroll () {
+      if (window.pageYOffset < 0) {
+        return
+      }
+      if (Math.abs(window.pageYOffset - this.lastScrollPosition) < this.scrollOffset) {
+        return
+      }
+      this.showHeader = window.pageYOffset < this.lastScrollPosition
+      this.lastScrollPosition = window.pageYOffset
+    }
+  }
 }
 </script>
 
 <style lang="stylus" scoped>
   .main-nav-container
-    // padding 20px
-    // border-bottom 1px solid #000
     display flex
     flex-direction row
     justify-content space-between
     align-items center
-    position absolute
+    position fixed
     background-color #F3F0E8
     width 100%
     box-shadow 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+    transform translateY(0)
+    transition transform 300ms linear
+    z-index 100
+
+    &.is-hidden
+      transform: translateY(-100%);
 
   .nav-links
     display flex

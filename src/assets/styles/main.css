@@ -56,3 +56,23 @@ p {
   display: block !important;
   margin: 0 auto !important;
 }
+
+.margin-bottom-10 { margin-bottom: 10px; }
+
+/*ROW/COLS*/
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+
+.align-start { align-items: flex-start; }
+.align-end { align-items: flex-end; }

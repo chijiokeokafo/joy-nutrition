@@ -65,8 +65,79 @@
         </div>
         <button class="red block-center">Learn More</button>
 
-        <div>
+        <div class="dot-separator">
           <img style="width: 100%; margin: 60px 0 40px 0" src="@/assets/img/horizontal.png" alt="">
+        </div>
+
+        <div class="services-2-container">
+          <div class="service-row row justify-start align-start">
+            <img src="@/assets/img/eating-disorder-icon.svg" alt="">
+            <div class="service-row-copy">
+              <h2>EATING DISORDER RECOVERY</h2>
+              <p>Recovery is possible! No matter where you are along the continuum of recovery, I will provide appropriate nutrition counselling to support your journey.</p>
+              <button class="green">Learn More</button>
+              <div class="dot-separator">
+                <img style="width: 100%; margin: 60px 0 40px 0" src="@/assets/img/horizontal.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="service-row row justify-start align-start">
+            <img src="@/assets/img/disordered-icon.svg" alt="">
+            <div class="service-row-copy">
+              <h2>disordered eating/intuitive eating</h2>
+              <p>Ready to break free of the yo-yo dieting cycle? As a qualifying Intuitive Eating Counselor, I will help you learn to listen to your body, to renew and better your relationship with food.</p>
+              <button class="yellow">Learn More</button>
+              <div class="dot-separator">
+                <img style="width: 100%; margin: 60px 0 40px 0" src="@/assets/img/horizontal.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="service-row row justify-start align-start">
+            <img src="@/assets/img/general-nutrition-icon.svg" alt="">
+            <div class="service-row-copy">
+              <h2>general nutrition from a non-dieting approach</h2>
+              <p>Each life stage brings different changes and challenges that can affect how you feel about food. I’m here to help.</p>
+              <button class="red">Learn More</button>
+              <div class="dot-separator">
+                <img style="width: 100%; margin: 60px 0 40px 0" src="@/assets/img/horizontal.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="expect-section">
+      <div class="inner">
+        <h1 class="text-center">WHAT YOU CAN EXPECT</h1>
+
+        <div class="expect-copy">
+          <div class="first-section">
+            <img src="@/assets/img/expect-icon.svg" alt="" style="">
+            <p>Anyone I work with can expect utmost professionalism (though I’m known to swear when the
+            situation calls for it!). But maybe more importantly, working with me is a collaboration. I don’t
+            want my clients to feel like I’m just telling them what to do. Everything I do has a strong
+            background of science-backed evidence, and I work hard to stay on top of new research and
+            trends, to offer best-in-class support.</p>
+          </div>
+          <p>If you’re considering working with me, it’s important to know that I will push you to set goals
+          and try things outside of your comfort zone, but I will not let you drown. We are a team, and I
+          want you to succeed.</p>
+          <p>My practice is also a safe space for everyone. You can expect a diverse, inclusive, judgment-free
+          approach to your treatment.</p>
+        </div>
+        <button class="green block-center">Book an Appointment</button>
+      </div>
+    </div>
+
+    <div class="find-the-joy-section">
+      <div class="inner">
+        <h1 class="margin-bottom-10">FIND THE JOY AGAIN</h1>
+        <div class="input">
+          <input type="text" placeholder="Email Address">
+          <button class="green">Join</button>
         </div>
       </div>
     </div>
@@ -74,13 +145,10 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
   components: {
-    // HelloWorld
   }
 }
 </script>
@@ -91,7 +159,7 @@ export default {
     font-weight 700
     color #2A1C2D
     font-family 'Montserrat', sans-serif
-    
+
   p
     font-size 16px
     font-weight 300
@@ -122,56 +190,54 @@ export default {
       justify-content flex-start
       align-items center
 
-      
-
     .hero-img img
       display block
 
   .help-section
     background-color #f8f6f1
-    padding-top 100px
-    
+    padding 100px 0 60px 0
+
     .inner
       width 68%
       max-width 1200px
       margin 0 auto
-      
+
     .help-copy .first-section
       display flex
-      flex-direction row 
+      flex-direction row
       justify-content space-between
       align-items center
-      
+
       img
         margin-right 40px
         position relative
         top -30px
-        
+
     .help-copy p
       margin-bottom 30px
-      
+
   .services-container
     display flex
     flex-direction row
     justify-content space-between
-    align-items flex-end
-    
+    align-items flex-start
+
     img
-      margin-bottom 50px 
-    
-    .service
-      width 46% 
       margin-bottom 50px
-      
+
+    .service
+      width 46%
+      margin-bottom 50px
+
       img
         margin 0 auto 20px
         display block
-      
+
   .dot-separator
     // height 100%
     // width 1px
     // border 1px dotted #333
-      
+
   button
     color #F3F0E8
     font-size 16px
@@ -182,15 +248,15 @@ export default {
     outline none
     cursor pointer
     transition all 0.25s ease
-    
+
     &.green
       background-color #9CBCA5
       border 2px solid #9CBCA5
-      
+
     &.red
       background-color #B85459
       border 2px solid #B85459
-    
+
     &.yellow
       background-color #E8B67C
       border 2px solid #E8B67C
@@ -209,4 +275,72 @@ export default {
         background-color #fff
         border-color #fff
         color #9CBCA5
+
+  .service-row img
+    margin-right 50px
+
+  .service-row-copy
+    h2
+      font-size 24px
+      font-weight 700
+      font-family 'Montserrat', sans-serif
+      text-transform uppercase
+
+    p
+      margin-bottom 30px
+
+  .expect-section
+    background-color #F3F0E8
+    padding 80px 0 60px 0
+
+    .inner
+      width 68%
+      max-width 1200px
+      margin 0 auto
+
+    .expect-copy .first-section
+      display flex
+      flex-direction row
+      justify-content space-between
+      align-items center
+
+      img
+        margin-right 40px
+        position relative
+        top -30px
+
+    .expect-copy p
+      margin-bottom 30px
+
+  .find-the-joy-section
+    background url('~@/assets/img/find-the-joy-bg.jpg') center center / cover no-repeat
+    padding 100px 0
+    text-align center
+    position relative
+
+    .inner
+      width 68%
+      max-width 1200px
+      margin 0 auto
+
+    h1
+      color #F3F0E8
+      position relative
+      z-index 2
+
+    .input input
+      outline none
+      border none
+      background-color rgba(0, 0, 0, 0.4)
+      padding 10px 20px
+      box-sizing border-box
+      height 40px
+      color #F3F0E8
+      font-family 'Montserrat', sans-serif
+      width 60%
+      margin-top 10px
+
+      button
+        background-color #F3F0E8
+        color #B85459
 </style>
