@@ -76,7 +76,14 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior (to, from, savedPosition) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({ top: 0 })
+      }, 250)
+    })
+  }
 })
 
 // This callback runs before every route change, including on page load.

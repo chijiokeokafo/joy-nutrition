@@ -47,6 +47,13 @@ p {
   opacity: 0
 }
 
+.inner {
+  width: 68%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+  
+
 /*HELPERS*/
 .text-left { text-align: left; }
 .text-center { text-align: center; }
@@ -76,3 +83,56 @@ p {
 
 .align-start { align-items: flex-start; }
 .align-end { align-items: flex-end; }
+
+/*BUTTON*/
+button {
+  color: #f3f0e8;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  padding: 8px 20px;
+  margin-right: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+button.green {
+  background-color: #9cbca5;
+  border: 2px solid #9cbca5;
+}
+button.red {
+  background-color: #b85459;
+  border: 2px solid #b85459;
+}
+button.yellow {
+  background-color: #e8b67c;
+  border: 2px solid #e8b67c;
+}
+button:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #9cbca5;
+}
+button.ghost {
+  background-color: transparent;
+  border: 2px solid #9cbca5;
+  color: #9cbca5;
+}
+button.ghost:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #9cbca5;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2a1c2d;
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #2a1c2d;
+  font-family: 'Montserrat', sans-serif;
+}

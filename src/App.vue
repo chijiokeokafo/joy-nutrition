@@ -1,17 +1,20 @@
 <template>
   <div>
-    <!-- <VueFixedHeader> -->
-      <Nav />
-    <!-- </VueFixedHeader> -->
-    <transition name="pageFade" mode="out-in">
+    <Nav />
+    <!-- <transition name="pageFade" mode="out-in">
       <router-view/>
-    </transition>
+    </transition> -->
+    <router-view v-slot="{ Component }">
+      <transition name="pageFade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+
     <Footer />
   </div>
 </template>
 
 <script>
-// import VueFixedHeader from 'vue-fixed-header'
 import Nav from '@/components/Nav.vue'
 import Footer from '@/components/Footer.vue'
 
@@ -19,7 +22,6 @@ export default {
   components: {
     Nav,
     Footer
-    // VueFixedHeader
   }
 }
 </script>
@@ -27,7 +29,7 @@ export default {
 <style>
   @import './assets/styles/main.css';
 
-  .pageFade-enter {
+  /*.pageFade-enter {
       opacity: 0;
   }
 
@@ -42,12 +44,14 @@ export default {
   .pageFade-leave-active {
       transition: opacity .3s ease;
       opacity: 0;
+  }*/
+
+  .pageFade-enter-active,
+  .pageFade-leave-active { transition: opacity 0.3s ease; }
+
+  .pageFade-enter-from,
+  .pageFade-leave-to {
+    opacity: 0;
   }
 
-  .navbar.vue-fixed-header--isFixed {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-  }
 </style>

@@ -131,41 +131,23 @@
         <button class="green block-center">Book an Appointment</button>
       </div>
     </div>
-
-    <div class="find-the-joy-section">
-      <div class="inner">
-        <h1 class="margin-bottom-10">FIND THE JOY AGAIN</h1>
-        <div class="input">
-          <input type="text" placeholder="Email Address">
-          <button class="green">Join</button>
-        </div>
-      </div>
-    </div>
+    <Signup></Signup>
   </div>
 </template>
 
 <script>
 
+import Signup from '@/components/Signup.vue'
+
 export default {
   name: 'Home',
   components: {
+    Signup
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-  h1
-    font-size 48px
-    font-weight 700
-    color #2A1C2D
-    font-family 'Montserrat', sans-serif
-
-  p
-    font-size 16px
-    font-weight 300
-    color #2A1C2D
-    font-family 'Montserrat', sans-serif
-
   .home-container
     padding-top 102px
     background-color #F3F0E8
@@ -233,49 +215,6 @@ export default {
         margin 0 auto 20px
         display block
 
-  .dot-separator
-    // height 100%
-    // width 1px
-    // border 1px dotted #333
-
-  button
-    color #F3F0E8
-    font-size 16px
-    font-weight 700
-    font-family 'Montserrat', sans-serif
-    padding 8px 20px
-    margin-right 20px
-    outline none
-    cursor pointer
-    transition all 0.25s ease
-
-    &.green
-      background-color #9CBCA5
-      border 2px solid #9CBCA5
-
-    &.red
-      background-color #B85459
-      border 2px solid #B85459
-
-    &.yellow
-      background-color #E8B67C
-      border 2px solid #E8B67C
-
-    &:hover
-      background-color #fff
-      border-color #fff
-      color #9CBCA5
-
-    &.ghost
-      background-color transparent
-      border 2px solid #9CBCA5
-      color #9CBCA5
-
-      &:hover
-        background-color #fff
-        border-color #fff
-        color #9CBCA5
-
   .service-row img
     margin-right 50px
 
@@ -312,35 +251,4 @@ export default {
     .expect-copy p
       margin-bottom 30px
 
-  .find-the-joy-section
-    background url('~@/assets/img/find-the-joy-bg.jpg') center center / cover no-repeat
-    padding 100px 0
-    text-align center
-    position relative
-
-    .inner
-      width 68%
-      max-width 1200px
-      margin 0 auto
-
-    h1
-      color #F3F0E8
-      position relative
-      z-index 2
-
-    .input input
-      outline none
-      border none
-      background-color rgba(0, 0, 0, 0.4)
-      padding 10px 20px
-      box-sizing border-box
-      height 40px
-      color #F3F0E8
-      font-family 'Montserrat', sans-serif
-      width 60%
-      margin-top 10px
-
-      button
-        background-color #F3F0E8
-        color #B85459
 </style>
