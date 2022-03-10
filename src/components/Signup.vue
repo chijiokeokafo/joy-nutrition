@@ -37,6 +37,7 @@
       color #F3F0E8
       font-family 'Montserrat', sans-serif
       width 60%
+      max-width 600px
       margin-top 10px
 
       button

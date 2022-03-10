@@ -31,9 +31,7 @@
       </div>
       <div class="contact text-left">
         <p><strong>Joy Nutrition</strong></p>
-        <p>123 Main St<br>
-        City, Ontario, Canada<br>
-        E1N 3A5</p>
+
         <p>123 456 7895<br>
         joy@joynutrition.com</p>
       </div>

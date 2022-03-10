@@ -70,6 +70,7 @@ export default {
 <style lang="stylus" scoped>
   .main-about-container
     padding-top 102px
+    background-color #F3F0E8
 
   .about-hero
     background url('~@/assets/img/about-hero.jpg') center center / cover no-repeat
@@ -78,7 +79,7 @@ export default {
     position relative
 
   .about-body
-    padding 60px 0
+    padding 90px 0
 
     img
       width 50%
