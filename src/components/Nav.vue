@@ -27,11 +27,11 @@
         <h1>Contact</h1>
       </router-link>
     </div>
-
     <div class="book-an-appt">
-      <h1>Book an Appointment</h1>
+      <a target="_blank" style="" href="https://joynutrition.janeapp.com/">
+        <h1>Book an Appointment</h1>
+      </a>
     </div>
-
   </div>
 </template>
 
@@ -143,6 +143,9 @@ export default {
     padding 2.5%
     box-sizing border-box
     align-self: stretch;
+
+    a
+      text-decoration none
 
     h1
       font-size 18px
