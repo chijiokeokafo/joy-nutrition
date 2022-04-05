@@ -28,6 +28,7 @@ export default {
 
 <style>
   @import './assets/styles/main.css';
+  @import './assets/styles/mobile.css';
 
   /*.pageFade-enter {
       opacity: 0;

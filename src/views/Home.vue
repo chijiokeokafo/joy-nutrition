@@ -251,4 +251,86 @@ export default {
     .expect-copy p
       margin-bottom 30px
 
+  @media (max-width: 1000px)
+    .home-container
+      padding-top 10px
+
+    .hero-section
+      flex-direction column-reverse
+      padding 0 0 60px 0
+
+      .hero-copy,
+      .hero-img
+        width 100%
+
+      .hero-img img
+        margin 0 auto
+        display block
+        max-height 600px
+
+      .hero-copy
+        text-align center
+        margin-top 40px
+
+    .hero-section .hero-cta-container
+      justify-content center
+
+    .mobile-toggle
+      display block
+      width 35px
+
+      img
+        width 100%
+
+    .help-section
+      padding-top 60px
+
+      .inner
+        width 85%
+
+    h1.text-center
+      font-size 40px !important
+
+    .help-section .help-copy .first-section
+      flex-direction column
+
+      img
+        top 0
+        margin 40px 0
+
+    .services-container
+      flex-direction column
+
+      .service
+        width 100%
+
+      .dot-separator
+        display none
+
+    .service-row.row
+      flex-direction column
+      align-items center !important
+
+      img
+        margin 0 0 30px 0
+
+    .expect-section
+      padding 60px 0 60px 0
+
+      .inner
+        width 85%
+
+      .expect-copy .first-section
+        display flex
+        flex-direction column
+        justify-content space-between
+        align-items center
+
+        img
+          top 0
+          margin 40px 0
+
+      .expect-copy p
+        margin-bottom 30px
+
 </style>

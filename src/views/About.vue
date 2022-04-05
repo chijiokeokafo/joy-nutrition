@@ -113,4 +113,25 @@ export default {
   .education-inner
     max-width 900px
 
+  @media (max-width: 1000px)
+    .main-about-container
+      padding-top 0
+
+    .about-body
+      padding 40px 0
+
+      .row.inner
+        flex-direction column !important
+        width 70%
+
+        img
+          margin 0 auto
+          width 100%
+
+        p
+          width 100%
+
+    .education-hero
+      padding 80px 30px
+
 </style>

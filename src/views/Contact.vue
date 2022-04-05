@@ -94,4 +94,19 @@ export default {
   .contact-info
     img
       margin-right 20px
+
+  @media (max-width: 1000px)
+    .main-contact-container
+      padding-top 0
+
+    .contact-body
+      padding 40px 0
+
+      .inner.row
+        width 80%
+        flex-direction column
+
+        .contact-form
+          width 100%
+          margin 0 0 40px 0
 </style>

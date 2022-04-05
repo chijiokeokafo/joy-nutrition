@@ -2,10 +2,6 @@
   <div class="find-the-joy-section">
       <div class="inner">
         <h1 class="margin-bottom-10">FIND THE JOY AGAIN</h1>
-        <div class="input">
-          <input type="text" placeholder="Email Address">
-          <button class="green">Join</button>
-        </div>
       </div>
     </div>
 </template>

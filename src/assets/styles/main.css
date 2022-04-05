@@ -50,6 +50,18 @@ strong { font-weight: 700 !important; }
   opacity: 0
 }
 
+.menuFade-enter-active,
+.menuFade-leave-active {
+  transition-duration: 0.5s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.menuFade-enter,
+.menuFade-leave-active {
+  opacity: 0
+}
+
 .inner {
   width: 68%;
   max-width: 1200px;

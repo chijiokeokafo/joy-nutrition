@@ -6,32 +6,60 @@
       </div>
     </router-link>
 
-    <div class="nav-links">
-      <router-link to="/">
-        <h1>Home</h1>
-      </router-link>
-      <span class="nav-pipe">|</span>
-      <router-link to="/about">
-        <h1>About</h1>
-      </router-link>
-      <span class="nav-pipe">|</span>
-      <router-link to="/services">
-        <h1>Services</h1>
-      </router-link>
-      <span class="nav-pipe">|</span>
-      <router-link to="resources">
-        <h1>Resources</h1>
-      </router-link>
-      <span class="nav-pipe">|</span>
-      <router-link to="contact">
-        <h1>Contact</h1>
-      </router-link>
+    <div class="show-hide">
+      <div class="nav-links">
+        <router-link to="/">
+          <h1>Home</h1>
+        </router-link>
+        <span class="nav-pipe">|</span>
+        <router-link to="/about">
+          <h1>About</h1>
+        </router-link>
+        <span class="nav-pipe">|</span>
+        <router-link to="/services">
+          <h1>Services</h1>
+        </router-link>
+        <span class="nav-pipe">|</span>
+        <router-link to="resources">
+          <h1>Resources</h1>
+        </router-link>
+        <span class="nav-pipe">|</span>
+        <router-link to="contact">
+          <h1>Contact</h1>
+        </router-link>
+      </div>
+      <div class="book-an-appt">
+        <a target="_blank" style="" href="https://joynutrition.janeapp.com/">
+          <h1>Book an Appointment</h1>
+        </a>
+      </div>
     </div>
-    <div class="book-an-appt">
-      <a target="_blank" style="" href="https://joynutrition.janeapp.com/">
-        <h1>Book an Appointment</h1>
-      </a>
+    <div class="mobile-toggle" @click="toggleMobileNav()">
+      <img src="@/assets/img/mobile.png" alt="">
     </div>
+    <transition name="menuFade">
+      <div class="mobile-links" v-if="isMobileNav">
+        <router-link to="/" @click="this.isMobileNav = false">
+          <h1>Home</h1>
+        </router-link>
+        <router-link to="/about" @click="this.isMobileNav = false">
+          <h1>About</h1>
+        </router-link>
+        <router-link to="/services" @click="this.isMobileNav = false">
+          <h1>Services</h1>
+        </router-link>
+        <router-link to="resources" @click="this.isMobileNav = false">
+          <h1>Resources</h1>
+        </router-link>
+        <router-link to="contact" @click="this.isMobileNav = false">
+          <h1>Contact</h1>
+        </router-link>
+
+        <a target="_blank" style="" href="https://joynutrition.janeapp.com/">
+          <h1>Book an Appointment</h1>
+        </a>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -41,7 +69,8 @@ export default {
   data: () => ({
     showHeader: true,
     lastScrollPosition: 0,
-    scrollOffset: 40
+    scrollOffset: 40,
+    isMobileNav: false
   }),
   mounted () {
     this.lastScrollPosition = window.pageYOffset
@@ -61,6 +90,9 @@ export default {
       }
       this.showHeader = window.pageYOffset < this.lastScrollPosition
       this.lastScrollPosition = window.pageYOffset
+    },
+    toggleMobileNav () {
+      this.isMobileNav = !this.isMobileNav
     }
   }
 }
@@ -82,6 +114,11 @@ export default {
 
     &.is-hidden
       transform: translateY(-100%);
+
+  .show-hide
+    width calc( 100% - 100px )
+    display flex
+    align-self stretch
 
   .nav-links
     display flex
@@ -153,4 +190,71 @@ export default {
       color #F3F0E8
       font-family 'Montserrat', sans-serif
 
+  .mobile-toggle,
+  .mobile-links
+    display none
+
+  .mobile-links
+    position absolute
+    top 74px
+    left 0
+    background-color #9cbca5
+    padding 20px
+    width 100%
+
+  .show-enter-active,
+  .show-leave-enter
+    transform translateX(0)
+    transition all .3s linear
+
+  .show-enter,
+  .show-leave-to
+    transform translateX(100%)
+
+  @media (max-width: 1200px)
+    .logo img
+      height 50px
+
+  @media (max-width: 1000px)
+    .logo
+      padding 0
+
+      img
+        height 50px
+
+    .main-nav-container
+      padding 12px
+      position relative
+
+    .nav-links,
+    .book-an-appt
+      display none
+
+    .show-hide
+      position absolute
+      top 100px
+      left -300px
+
+    .mobile-toggle
+      display block
+
+      img
+        width 35px
+
+    .mobile-links
+      display block
+      // position absolute
+      // top 74px
+      // left 0
+      // background-color #9cbca5
+      // padding 20px
+      // width 100%
+
+      a
+        text-decoration none
+
+        h1
+          font-size 20px
+          font-weight 500
+          color #f3f0e8
 </style>

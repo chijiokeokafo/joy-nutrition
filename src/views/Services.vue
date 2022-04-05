@@ -127,4 +127,18 @@ export default {
     width 100%
     margin-bottom 20px
 
+  @media (max-width: 1000px)
+    .main-services-container
+      padding-top 0
+
+    .services-body .col.inner
+      padding 0
+      width 80%
+
+      .row
+        flex-direction column
+
+        .service-block
+          width 100%
+          margin-bottom 30px
 </style>

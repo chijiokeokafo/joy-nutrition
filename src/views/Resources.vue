@@ -71,4 +71,25 @@ export default {
       &:hover
         color #9CBCA5
 
+  @media (max-width: 1000px)
+    .main-resources-container
+      padding-top 0
+
+    .resources-body
+      padding 40px 0
+
+      .inner
+        padding 0
+        width 80%
+
+        p
+          font-size 16px
+
+        .row
+          flex-direction column
+
+          .service-block
+            width 100%
+            margin-bottom 30px
+
 </style>

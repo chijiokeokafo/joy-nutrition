@@ -62,8 +62,16 @@
     transition all 0.125s ease
 
   .social
-
     img
       display block
       margin-bottom 20px
+
+  @media (max-width: 1000px)
+    .inner-footer
+      flex-flow row wrap
+      width 100%
+
+      .contact.text-left
+        width 100%
+        margin-top 40px
 </style>
