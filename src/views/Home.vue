@@ -47,28 +47,6 @@
           <p style="font-weight: 600;"><strong>SERVICES:</strong></p>
         </div>
 
-        <div class="services-container">
-
-          <div class="service individual">
-            <img src="@/assets/img/individual.svg" alt="">
-            <p><strong>Individual Nutrition Counselling Services</strong>
-            <br>Nutrition assessment and follow-up for eating disorder treatment (youth and adults), disordered eating, metabolic syndrome and more.</p>
-          </div>
-
-          <div class="dot-separator"><img src="@/assets/img/dots.png" alt=""></div>
-
-          <div class="service group">
-            <img src="@/assets/img/group.svg" alt="">
-            <p><strong>Group Nutrition Presentations</strong>
-            <br>Workshops on nutrition therapy for eating disorder treatment, disordered eating, nutrition and mental health.</p>
-          </div>
-        </div>
-        <button class="red block-center">Learn More</button>
-
-        <div class="dot-separator">
-          <img style="width: 100%; margin: 60px 0 40px 0" src="@/assets/img/horizontal.png" alt="">
-        </div>
-
         <div class="services-2-container">
           <div class="service-row row justify-start align-start">
             <img src="@/assets/img/eating-disorder-icon.svg" alt="">
@@ -94,7 +72,7 @@
             </div>
           </div>
 
-          <div class="service-row row justify-start align-start">
+          <div class="service-row row justify-start align-start" style="margin-bottom: 60px;">
             <img src="@/assets/img/general-nutrition-icon.svg" alt="">
             <div class="service-row-copy">
               <h2>general nutrition from a non-dieting approach</h2>
@@ -106,6 +84,28 @@
             </div>
           </div>
         </div>
+
+        <!-- <div class="dot-separator">
+          <img style="width: 100%; margin: 60px 0 40px 0" src="@/assets/img/horizontal.png" alt="">
+        </div> -->
+
+        <div class="services-container">
+
+          <div class="service individual">
+            <img src="@/assets/img/individual.svg" alt="">
+            <p><strong>Individual Nutrition Counselling Services</strong>
+            <br>Nutrition assessment and follow-up for eating disorder treatment (youth and adults), disordered eating, metabolic syndrome and more.</p>
+          </div>
+
+          <!-- <div class="dot-separator"><img src="@/assets/img/dots.png" alt=""></div> -->
+
+          <div class="service group">
+            <img src="@/assets/img/group.svg" alt="">
+            <p><strong>Group Nutrition Presentations</strong>
+            <br>Workshops on nutrition therapy for eating disorder treatment, disordered eating, nutrition and mental health.</p>
+          </div>
+        </div>
+        <button class="red block-center">Learn More</button>
       </div>
     </div>
 
