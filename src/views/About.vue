@@ -35,7 +35,7 @@
     <div class="about-body">
       <div class="inner education-inner">
         <ul>
-          <li>Registered Dietitian with the College of Dietitians of Ontario (2013)</li>
+          <!-- <li>Registered Dietitian with the College of Dietitians of Ontario (2013)</li>
           <li>RD working in Outpatient Eating Disorder Treatment and Mood &amp; Anxiety Treatment
           programs since 2013 (St. Joseph’s Healthcare Hamilton, Stratford General Hospital,
           CMHA – Waterloo/Wellington)</li>
@@ -47,7 +47,12 @@
           <li>Intro to Cognitive Behavioral Therapy Level 2 – McMaster University (2017)</li>
           <li>Intro to Cognitive Behavioral Therapy Level 1 – McMaster University (2014)</li>
           <li>Honours BASc Nutrition and Food – Ryerson University (2011)</li>
-          <li>Honours BSc Human Kinetics – University of Ottawa (2007)</li>
+          <li>Honours BSc Human Kinetics – University of Ottawa (2007)</li> -->
+          <li>Registered Dietitian with the College of Dietitians of Ontario (2013)</li>
+          <li>Certified Exercise Physiologist – Canadian Society for Exercise Physiology (2007)</li>
+          <li>Certified Intuitive Eating Counselor (In Progress)</li>
+          <li>Principles of Family-Based Treatment for Adolescent Eating Disorders (2019)</li>
+          <li>Intro to Cognitive Behavioral Therapy Level 1 & 2 – McMaster University</li>
         </ul>
       </div>
     </div>
