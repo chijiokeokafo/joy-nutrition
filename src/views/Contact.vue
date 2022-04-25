@@ -13,16 +13,13 @@
         </div>
         <div class="contact-info">
           <p><strong>Joy Nutrition</strong></p>
-
-          <p>123 Main Street, City, Ontario, Canada<br>
-          ABC 123</p>
-          <p>123 456 7890<br>
-          email@domain.com</p>
-          <div class="row">
+          <p><a href="tel:416-476-5491">416 476 5491</a><br>
+          <a href="mailto:joy@joynutrition.com">joy@joynutrition.com</a></p>
+          <!-- <div class="row">
             <img src="@/assets/img/facebook.svg" alt="">
             <img src="@/assets/img/instagram.svg" alt="">
             <img src="@/assets/img/twitter.svg" alt="">
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

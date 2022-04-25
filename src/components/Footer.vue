@@ -22,18 +22,18 @@
         </router-link>
       </div>
 
-      <div class="social col justify-between">
+      <!-- <div class="social col justify-between">
         <p><strong>Connect</strong></p>
         <img src="@/assets/img/facebook.svg" alt="">
         <img src="@/assets/img/instagram.svg" alt="">
         <img src="@/assets/img/twitter.svg" alt="">
 
-      </div>
+      </div> -->
       <div class="contact text-left">
         <p><strong>Joy Nutrition</strong></p>
 
-        <p>123 456 7895<br>
-        joy@joynutrition.com</p>
+        <p><a href="tel:416-476-5491">416 476 5491</a><br>
+        <a href="mailto:joy@joynutrition.com">joy@joynutrition.com</a></p>
       </div>
     </div>
   </div>
@@ -65,6 +65,14 @@
     img
       display block
       margin-bottom 20px
+
+  .contact a
+    color inherit
+    text-decoration none
+    transition all 0.25s ease
+
+    &:hover
+      color #9cbca5
 
   @media (max-width: 1000px)
     .inner-footer
