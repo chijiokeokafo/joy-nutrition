@@ -37,8 +37,8 @@
     <div class="mobile-toggle" @click="toggleMobileNav()">
       <img src="@/assets/img/mobile.png" alt="">
     </div>
-    <transition name="menuFade">
-      <div class="mobile-links" v-if="isMobileNav">
+    <transition name="pageFade" mode="in-out">
+      <div class="mobile-links" v-if="isMobileNav" key="0">
         <router-link to="/" @click="this.isMobileNav = false">
           <h1>Home</h1>
         </router-link>
@@ -257,4 +257,14 @@ export default {
           font-size 20px
           font-weight 500
           color #f3f0e8
+
+.menuFade-enter-active,
+.menuFade-leave-active
+  transition-duration 0.5s
+  transition-property opacity
+  transition-timing-function ease
+
+.menuFade-enter,
+.menuFade-leave-active
+  opacity 0
 </style>

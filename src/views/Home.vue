@@ -15,7 +15,7 @@
         <p style="margin-bottom: 30px;">Want to learn more? Read on for more about me and what I can do for you.</p>
 
         <div class="hero-cta-container">
-          <button class="green">Learn More</button><button class="ghost">Get Started</button>
+          <router-link to="/services"><button class="green">Learn More</button></router-link> <a target="_blank" style="" href="https://joynutrition.janeapp.com/"><button class="ghost">Get Started</button></a>
         </div>
       </div>
 
@@ -53,7 +53,7 @@
             <div class="service-row-copy">
               <h2>EATING DISORDER RECOVERY</h2>
               <p>Recovery is possible! No matter where you are along the continuum of recovery, I will provide appropriate nutrition counselling to support your journey.</p>
-              <button class="green">Learn More</button>
+              <router-link to="/services"><button class="green">Learn More</button></router-link>
               <div class="dot-separator">
                 <img style="width: 100%; margin: 60px 0 40px 0" src="@/assets/img/horizontal.png" alt="">
               </div>
@@ -65,7 +65,7 @@
             <div class="service-row-copy">
               <h2>disordered eating/intuitive eating</h2>
               <p>Ready to break free of the yo-yo dieting cycle? As a qualifying Intuitive Eating Counselor, I will help you learn to listen to your body, to renew and better your relationship with food.</p>
-              <button class="yellow">Learn More</button>
+              <router-link to="/services"><button class="yellow">Learn More</button></router-link>
               <div class="dot-separator">
                 <img style="width: 100%; margin: 60px 0 40px 0" src="@/assets/img/horizontal.png" alt="">
               </div>
@@ -77,7 +77,7 @@
             <div class="service-row-copy">
               <h2>general nutrition from a non-dieting approach</h2>
               <p>Each life stage brings different changes and challenges that can affect how you feel about food. I’m here to help.</p>
-              <button class="red">Learn More</button>
+              <router-link to="/services"><button class="red">Learn More</button></router-link>
               <div class="dot-separator">
                 <img style="width: 100%; margin: 60px 0 40px 0" src="@/assets/img/horizontal.png" alt="">
               </div>
@@ -105,7 +105,7 @@
             <br>Workshops on nutrition therapy for eating disorder treatment, disordered eating, nutrition and mental health.</p>
           </div>
         </div>
-        <button class="red block-center">Learn More</button>
+        <router-link to="/services"><button class="red block-center">Learn More</button></router-link>
       </div>
     </div>
 
@@ -128,7 +128,9 @@
           <p>My practice is also a safe space for everyone. You can expect a diverse, inclusive, judgment-free
           approach to your treatment.</p>
         </div>
-        <button class="green block-center">Book an Appointment</button>
+        <a target="_blank" style="" href="https://joynutrition.janeapp.com/">
+          <button class="green block-center">Book an Appointment</button>
+        </a>
       </div>
     </div>
     <Signup></Signup>
@@ -215,8 +217,12 @@ export default {
         margin 0 auto 20px
         display block
 
-  .service-row img
-    margin-right 50px
+  .service-row
+    img
+      margin-right 50px
+
+    &:first-of-type img
+      margin-right 73px
 
   .service-row-copy
     h2
@@ -236,6 +242,10 @@ export default {
       width 68%
       max-width 1200px
       margin 0 auto
+
+      a
+        text-decoration none !important
+        color inherit
 
     .expect-copy .first-section
       display flex
@@ -332,5 +342,4 @@ export default {
 
       .expect-copy p
         margin-bottom 30px
-
 </style>

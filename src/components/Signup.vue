@@ -9,7 +9,7 @@
 <style scoped lang="stylus">
   .find-the-joy-section
     background url('~@/assets/img/find-the-joy-bg.jpg') center center / cover no-repeat
-    padding 100px 0
+    padding 100px 20px
     text-align center
     position relative
 

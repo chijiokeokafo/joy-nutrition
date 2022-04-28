@@ -6,10 +6,16 @@
     <div class="contact-body">
       <div class="inner row justify-start align-start">
         <div class="contact-form col justify-start align-start">
-          <input type="text" class="name" placeholder="Full Name">
-          <input type="text" class="email" placeholder="Email">
-          <textarea type="text" class="msg" placeholder="Message" />
-          <button class="submit red">&nbsp;&nbsp;&nbsp;SEND&nbsp;&nbsp;&nbsp;</button>
+          <form ref="form" @submit.prevent="sendEmail" style="text-align: right;">
+            <input type="text" name="sender_name" class="name" placeholder="Full Name" v-model="name">
+            <input type="email" name="sender_email" class="email" placeholder="Email" v-model="email">
+            <textarea name="message" class="msg" placeholder="Message" v-model="message"></textarea>
+
+            <transition name="pageFade" mode="out-in">
+              <p v-if="isEmailSent">Thank you for reaching out, I'll be in touch soon!</p>
+              <input v-else class="submit-btn" type="submit" value="SEND">
+            </transition>
+          </form>
         </div>
         <div class="contact-info">
           <p><strong>Joy Nutrition</strong></p>
@@ -30,11 +36,38 @@
 <script>
 
 import Signup from '@/components/Signup.vue'
+// import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 
 export default {
   name: 'contact',
+  data () {
+    return {
+      name: '',
+      email: '',
+      message: '',
+      isEmailSent: false
+    }
+
+    // SERVICE ID: service_x063vci
+  },
   components: {
     Signup
+  },
+  methods: {
+    sendEmail () {
+      emailjs.sendForm('service_szelfzu', 'template_65609a7', this.$refs.form, 'oak8dZqZUI3qzfQXk')
+        .then((result) => {
+          console.log('SUCCESS!', result.text)
+
+          this.name = ''
+          this.email = ''
+          this.message = ''
+          this.isEmailSent = true
+        }, (error) => {
+          console.log('FAILED...', error.text)
+        })
+    }
   }
 }
 </script>
@@ -46,7 +79,7 @@ export default {
 
   .contact-hero
     background url('~@/assets/img/contact-bg.jpg') center center / cover no-repeat
-    padding 130px 0
+    padding 130px 20px
     text-align center
     position relative
 
@@ -91,6 +124,20 @@ export default {
   .contact-info
     img
       margin-right 20px
+
+  input.submit-btn
+    color: #f3f0e8;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 20px;
+    margin-right: 0;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: #b85459;
+    border: 2px solid #b85459;
+    width 200px
 
   @media (max-width: 1000px)
     .main-contact-container
