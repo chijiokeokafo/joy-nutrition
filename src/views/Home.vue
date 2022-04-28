@@ -105,7 +105,7 @@
             <br>Workshops on nutrition therapy for eating disorder treatment, disordered eating, nutrition and mental health.</p>
           </div>
         </div>
-        <router-link to="/services"><button class="red block-center">Learn More</button></router-link>
+        <router-link to="/services" style="text-decoration: none !important;"><button class="red block-center">Learn More</button></router-link>
       </div>
     </div>
 

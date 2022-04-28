@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="mobile-toggle" @click="toggleMobileNav()">
-      <img src="@/assets/img/mobile.png" alt="">
+      <img src="@/assets/img/mobile2.png" alt="">
     </div>
     <transition name="pageFade" mode="in-out">
       <div class="mobile-links" v-if="isMobileNav" key="0">
