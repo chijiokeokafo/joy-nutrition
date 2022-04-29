@@ -79,7 +79,7 @@ export default {
 
   .about-hero
     background url('~@/assets/img/about-hero.jpg') center center / cover no-repeat
-    padding 130px 20px
+    padding 80px 20px
     text-align center
     position relative
 

@@ -66,7 +66,7 @@ export default {
 
   .services-hero
     background url('~@/assets/img/services-bg.jpg') center center / cover no-repeat
-    padding 130px 20px
+    padding 80px 20px
     text-align center
     position relative
 

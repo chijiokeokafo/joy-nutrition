@@ -2,6 +2,9 @@
   <div class="find-the-joy-section">
       <div class="inner">
         <h1 class="margin-bottom-10">FIND THE JOY AGAIN</h1>
+        <a target="_blank" style="" href="https://joynutrition.janeapp.com/">
+          <button class="yellow">Book a Discovery Call Today</button>
+        </a>
       </div>
     </div>
 </template>
@@ -22,6 +25,9 @@
       color #F3F0E8
       position relative
       z-index 2
+
+    button.yellow
+      margin-top 20px
 
     .input input
       outline none

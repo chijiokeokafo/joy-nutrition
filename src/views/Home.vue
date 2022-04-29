@@ -33,18 +33,18 @@
 
         <div class="help-copy">
           <div class="first-section">
-            <img src="@/assets/img/help-icon.svg" alt="" style="">
-            <p>I’ve been working as a registered dietitian in eating disorder recovery and treatment since
+            <p><img src="@/assets/img/help-icon.svg" alt="" style="float: left;">
+            I’ve been working as a registered dietitian in eating disorder recovery and treatment since
             2013. My clients have been all genders, ranged in age from adolescents to seniors, and have
             been at varying points of recovery. I strive to be a valued member of the
             multidisciplinary treatment teams of all of my clients.</p>
+            <p>In addition to eating disorder treatment, I have also worked with clients who have mood and
+            anxiety disorders, women’s mental health concerns, exercise and movement issues,
+            cardiovascular disease, pre-diabetes and diabetes, and challenges with perinatal nutrition.</p>
+            <p>I provide nutrition counseling from a Healthy At Every Size (HAES) approach. My overall goal is
+            to help you improve your relationship with food through science, and learning how to listen to your body beyond feelings of shame or guilt. In short, my focus is to help you understand and
+            break through the nutrition “noise.”</p>
           </div>
-          <p>In addition to eating disorder treatment, I have also worked with clients who have mood and
-          anxiety disorders, women’s mental health concerns, exercise and movement issues,
-          cardiovascular disease, pre-diabetes and diabetes, and challenges with perinatal nutrition.</p>
-          <p>I provide nutrition counseling from a Healthy At Every Size (HAES) approach. My overall goal is
-          to help you improve your relationship with food through science, and learning how to listen to your body beyond feelings of shame or guilt. In short, my focus is to help you understand and
-          break through the nutrition “noise.”</p>
           <p style="font-weight: 600;"><strong>SERVICES:</strong></p>
         </div>
 
@@ -116,18 +116,17 @@
 
         <div class="expect-copy">
           <div class="first-section">
-            <img src="@/assets/img/expect-icon.svg" alt="" style="">
-            <p>Anyone I work with can expect utmost professionalism (though I’m known to swear when the
+            <p><img src="@/assets/img/expect-icon.svg" alt="" style="float: left;">Anyone I work with can expect utmost professionalism (though I’m known to swear when the
             situation calls for it!). But maybe more importantly, working with me is a collaboration. I don’t
             want my clients to feel like I’m just telling them what to do. Everything I do has a strong
             background of science-backed evidence, and I work hard to stay on top of new research and
-            trends, to offer best-in-class support.</p>
+            trends, to offer best-in-class&nbsp;support.</p>
+            <p>If you’re considering working with me, it’s important to know that I will push you to set goals
+            and try things outside of your comfort zone, but I will not let you drown. We are a team, and I
+            want&nbsp;you&nbsp;to&nbsp;succeed.</p>
+            <p>My practice is also a safe space for everyone. You can expect a diverse, inclusive, judgment-free
+            approach to your treatment.</p>
           </div>
-          <p>If you’re considering working with me, it’s important to know that I will push you to set goals
-          and try things outside of your comfort zone, but I will not let you drown. We are a team, and I
-          want you to succeed.</p>
-          <p>My practice is also a safe space for everyone. You can expect a diverse, inclusive, judgment-free
-          approach to your treatment.</p>
         </div>
         <a target="_blank" style="" href="https://joynutrition.janeapp.com/">
           <button class="green block-center">Book an Appointment</button>
@@ -157,7 +156,7 @@ export default {
 
   .hero-section
     background-color #F3F0E8
-    padding 60px 0 0 0
+    padding 60px 0 30px
     display flex
     flex-direction row
     justify-content center
@@ -169,6 +168,9 @@ export default {
     .hero-img
       width 40%
 
+    .hero-copy p
+      margin-bottom 14px
+
     .hero-cta-container
       display flex
       flex-direction row
@@ -177,10 +179,15 @@ export default {
 
     .hero-img img
       display block
+      position relative
+      top 30px
 
   .help-section
     background-color #f8f6f1
     padding 100px 0 60px 0
+
+    .text-center
+      margin-bottom 20px
 
     .inner
       width 68%
@@ -188,18 +195,12 @@ export default {
       margin 0 auto
 
     .help-copy .first-section
-      display flex
-      flex-direction row
-      justify-content space-between
-      align-items center
 
       img
-        margin-right 40px
-        position relative
-        top -30px
+        margin 0 20px 20px 0
 
     .help-copy p
-      margin-bottom 30px
+      margin-bottom 16px
 
   .services-container
     display flex
@@ -239,6 +240,9 @@ export default {
     background-color #F3F0E8
     padding 80px 0 60px 0
 
+    .text-center
+      margin-bottom 20px
+
     .inner
       width 68%
       max-width 1200px
@@ -249,18 +253,18 @@ export default {
         color inherit
 
     .expect-copy .first-section
-      display flex
-      flex-direction row
-      justify-content space-between
-      align-items center
+      // display flex
+      // flex-direction row
+      // justify-content space-between
+      // align-items center
 
       img
-        margin-right 40px
-        position relative
-        top -30px
+        margin-right 14px
+        // position relative
+        // top -30px
 
     .expect-copy p
-      margin-bottom 30px
+      margin-bottom 16px
 
   @media (max-width: 1000px)
     .home-container
@@ -278,6 +282,7 @@ export default {
         margin 0 auto
         display block
         max-height 600px
+        top 0
 
       .hero-copy
         text-align center
@@ -307,7 +312,7 @@ export default {
 
       img
         top 0
-        margin 40px 0
+        margin 20px
 
     .services-container
       flex-direction column
@@ -339,7 +344,7 @@ export default {
 
         img
           top 0
-          margin 40px 0
+          margin 20px
 
       .expect-copy p
         margin-bottom 30px

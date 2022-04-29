@@ -6,6 +6,7 @@
     <div class="contact-body">
       <div class="inner row justify-start align-start">
         <div class="contact-form col justify-start align-start">
+          <p>Reach out anytime. I'd be so happy to hear&nbsp;from&nbsp;you.</p>
           <form ref="form" @submit.prevent="sendEmail" style="text-align: right;">
             <input type="text" name="sender_name" class="name" placeholder="Full Name" v-model="name">
             <input type="email" name="sender_email" class="email" placeholder="Email" v-model="email">
@@ -79,7 +80,7 @@ export default {
 
   .contact-hero
     background url('~@/assets/img/contact-bg.jpg') center center / cover no-repeat
-    padding 130px 20px
+    padding 80px 20px
     text-align center
     position relative
 

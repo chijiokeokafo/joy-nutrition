@@ -224,7 +224,7 @@ export default {
 
     .main-nav-container
       padding 12px
-      position relative
+      // position relative
 
     .nav-links,
     .book-an-appt
