@@ -31,7 +31,7 @@
       </div> -->
       <div class="contact text-left">
         <p><strong>Joy Nutrition</strong></p>
-
+        <p>Joy Guthrie, RD</p>
         <p><a href="tel:416-476-5491">416 476 5491</a><br>
         <a href="mailto:joy@joynutrition.com">joy@joynutrition.health</a></p>
       </div>

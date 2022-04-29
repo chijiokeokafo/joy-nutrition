@@ -13,6 +13,7 @@
         healthy way, to help them thrive. Food doesn’t need to be the cause of pain. It has the
         potential to instead become a basis for happiness, connection and joy.</p>
         <p style="margin-bottom: 30px;">Want to learn more? Read on for more about me and what I can do for you.</p>
+        <p style="margin-bottom: 30px; font-size: 20px; font-weight: 500;">Joy Guthrie, Registered Dietitian</p>
 
         <div class="hero-cta-container">
           <router-link to="/services"><button class="green">Learn More</button></router-link> <a target="_blank" style="" href="https://joynutrition.janeapp.com/"><button class="ghost">Get Started</button></a>
