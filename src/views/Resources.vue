@@ -73,7 +73,7 @@ export default {
 
   @media (max-width: 1000px)
     .main-resources-container
-      padding-top 0
+      padding-top 70px
 
     .resources-body
       padding 40px 0

@@ -129,7 +129,7 @@ export default {
 
   @media (max-width: 1000px)
     .main-services-container
-      padding-top 0
+      padding-top 70px
 
     .services-body .col.inner
       padding 0

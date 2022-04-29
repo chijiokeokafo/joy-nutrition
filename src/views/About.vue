@@ -5,16 +5,13 @@
     </div>
 
     <div class="about-body">
-      <div class="row inner justify">
-        <img src="@/assets/img/about-headshot.png" alt="">
-        <p>I landed in this space by way of my education. I had intended to study medicine, so I started with a major in Kinesiology. But then, during my undergrad degree, I took a nutrition and physiology course and I was mesmerized. I’m a big science nerd and I fell in love with the science behind nutrition. I found it particularly interesting that our bodies really are largely shaped by genetics and metabolic pathways—and that this is the opposite of the Western message that you can change your body by changing what you put into it. I also love how culture, religion, social determinants of health, education and more intersect with nutrition. This is where you get to know people, and it’s one of the aspects I love most about my work. So, long story short, I finished my degree and changed my path to nutrition.</p>
-      </div>
-      <div class="col inner">
+      <div class="inner">
+        <p><img src="@/assets/img/about-headshot.png" alt="">I landed in this space by way of my education. I had intended to study medicine, so I started with a major in Kinesiology. But then, during my undergrad degree, I took a nutrition and physiology course and I was mesmerized. I’m a big science nerd and I fell in love with the science behind nutrition. I found it particularly interesting that our bodies really are largely shaped by genetics and metabolic pathways—and that this is the opposite of the Western message that you can change your body by changing what you put into it. I also love how culture, religion, social determinants of health, education and more intersect with nutrition. This is where you get to know people, and it’s one of the aspects I love most about my work. So, long story short, I finished my degree and changed my path to nutrition.</p>
         <p>This decision has turned out to be one of the most impactful and meaningful of my life. The
         work is both challenging and gratifying, and when I’m able to help a client, it reaffirms my
         choice. This work isn’t just about food; it’s also about the role mental health plays in our
         relationship with nutrition. Helping people to understand this and factor it into their recovery is
-        important and, for me, very fulfilling.</p>
+        important and, for me,&nbsp;very&nbsp;fulfilling.</p>
 
         <p>In addition to my passion for the nutrition field, I’m also proud to be a woman of colour in this
         space. The perspectives of people of colour are rarely reflected in nutrition education and
@@ -25,6 +22,8 @@
         <p>Outside of my work life, I am a busy wife and mom to two little ones. I love to travel near and
         far, have family meals, dance in my kitchen and crochet Amigurumi. Growing up on the east
         coast, being near the water will forever be my happy place.</p>
+      </div>
+      <div class="col inner">
       </div>
     </div>
 
@@ -86,18 +85,19 @@ export default {
   .about-body
     padding 90px 0
 
+    p
+      margin-bottom 20px
+
     img
-      width 50%
-      margin-right 40px
+      width 46%
+      margin 0 20px 20px 0
+      float left
 
     .row.inner p
       width 50%
 
     .col.inner
       padding 60px 0 0
-
-      p
-        margin-bottom 30px
 
     ul
       list-style-type disc
@@ -120,18 +120,18 @@ export default {
 
   @media (max-width: 1000px)
     .main-about-container
-      padding-top 0
+      padding-top 70px
 
     .about-body
       padding 40px 0
 
+      img
+        margin 0 auto
+        width 100%
+
       .row.inner
         flex-direction column !important
         width 70%
-
-        img
-          margin 0 auto
-          width 100%
 
         p
           width 100%

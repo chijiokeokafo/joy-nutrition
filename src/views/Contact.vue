@@ -142,7 +142,7 @@ export default {
 
   @media (max-width: 1000px)
     .main-contact-container
-      padding-top 0
+      padding-top 70px
 
     .contact-body
       padding 40px 0
