@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     sendEmail () {
-      emailjs.sendForm('service_szelfzu', 'template_65609a7', this.$refs.form, 'oak8dZqZUI3qzfQXk')
+      emailjs.sendForm('Joy-Nutrition', 'template_65609a7', this.$refs.form, 'oak8dZqZUI3qzfQXk')
         .then((result) => {
           console.log('SUCCESS!', result.text)
 
