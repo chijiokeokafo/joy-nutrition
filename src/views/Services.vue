@@ -21,7 +21,7 @@
           <div class="service-block">
             <img src="@/assets/img/service3.svg" alt="">
             <p><strong>Nutrition Follow-Up</strong></p>
-            <p>(90 mins + 30 mins preparation, coordination and documentation of care)<br>
+            <p>(60 mins + 30 mins preparation, coordination and documentation of care)<br>
             $115</p>
           </div>
         </div>
