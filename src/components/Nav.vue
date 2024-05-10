@@ -29,9 +29,10 @@
         </router-link>
       </div>
       <div class="book-an-appt">
-        <a target="_blank" style="" href="https://joynutrition.janeapp.com/">
+        <!-- <a target="_blank" style="" href="https://joynutrition.janeapp.com/">
           <h1>Book an Appointment</h1>
-        </a>
+        </a> -->
+        <h1>Currently not accepting new clients</h1>
       </div>
     </div>
     <div class="mobile-toggle" @click="toggleMobileNav()">
