@@ -56,9 +56,10 @@
           <h1>Contact</h1>
         </router-link>
 
-        <a target="_blank" style="" href="https://joynutrition.janeapp.com/">
+        <!-- <a target="_blank" style="" href="https://joynutrition.janeapp.com/">
           <h1>Book an Appointment</h1>
-        </a>
+        </a> -->
+        <h1>Currently Not Accepting New Clients</h1>
       </div>
     </transition>
   </div>
@@ -186,7 +187,7 @@ export default {
       text-decoration none
 
     h1
-      font-size 18px
+      font-size 15px
       font-weight 700
       color #F3F0E8
       font-family 'Montserrat', sans-serif
